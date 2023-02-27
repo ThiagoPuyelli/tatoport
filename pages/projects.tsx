@@ -3,6 +3,8 @@ import Project from "../components/Project";
 import BacordPage from '../public/img/BacordPage.png'
 import EBacord from '../public/img/e-bacord.png'
 import Maquetacion from '../public/img/Maquetacion.png'
+import Crofo from '../public/img/Crofo.png'
+import atdev from '../public/img/atdev.png'
 
 const Projects = () => {
   const ProjectsStyled = styled.div`
@@ -72,6 +74,8 @@ const Projects = () => {
       <div className="projects">
         <Project title='Bacord web' text='Diseño web de la pagina de bacord, grupo de desarrolladores de videojuegos en el cual trabajo' image={BacordPage} link='http://bacord.ar/' />
         <Project title='E-Bacord' text='Pagina para bacord, pensado para dar cursos, quedo a medio desarrollo aunque se piensa retomar a mitad de este año' image={EBacord} link='http://e-bacord.ar/' />
+        <Project title='Crofo web' text='Esta web, es el primer sitio web del que saque un crédito, desarrollando una web para un administrador de servidores de discord' image={Crofo} link='https://tatocrofo.vercel.app/' />
+        <Project title='At Developing' text='Pagina pensada para desarrollar webs con un amigo, cosa que al final no se termino dando, aunque quedo una buena pagina' image={atdev} link='https://atdeveloping.vercel.app/' />
         <Project title='Primera maquetación' text='Esta página, fue de las primeras que hice en un curso de udemy' image={Maquetacion} link='https://github.com/ThiagoPuyelli/Maquetacion' />
       </div>
     </ProjectsStyled>
