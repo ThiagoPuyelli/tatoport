@@ -5,6 +5,7 @@ import react from '../public/img/react.svg'
 import nodejs from '../public/img/nodejs.png'
 import mongo from '../public/img/mongo.png'
 import nextjs from '../public/img/nextjs.png'
+import c from '../public/img/c.png'
 const About = () => {
   const AboutStyled = styled.div`
     padding-left: 100px;
@@ -80,7 +81,7 @@ const About = () => {
         <span className='orange'>S</span>obre
         <span className='orange'> M</span>i
       </h1>
-      <p className='textAbout'>Tengo 19 años, desde abril del 2020 que empece a programar, aprendiendo desarrollo web fullstack, actualmente estudiando sistemas y con experiencias en varios proyectos, ya con 1 año de experiencia trabajando</p>
+      <p className='textAbout'>Tengo 20 años, desde abril del 2020 que empece a programar, aprendiendo desarrollo web, actualmente estudiando sistemas y con experiencias en varios proyectos, ya con 2 años de experiencia trabajando</p>
       <div className="skills">
         <h1 className='skillsTitle'>Algunos de mis conocimientos</h1>
         <div className="skill">
@@ -94,6 +95,9 @@ const About = () => {
         </div>
         <div className="skill">
           <Image src={mongo} alt='mongo' style={{transform: 'scale(1.5, 1.5)'}} />
+        </div>
+        <div className="skill">
+          <Image src={c} alt='c' style={{transform: 'scale(1.5, 1.5)'}} />
         </div>
         <div className="skill">
           <Image src={nextjs} alt='nextjs' style={{
