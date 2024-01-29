@@ -138,7 +138,7 @@ const Home: NextPage = () => {
         <Link href='/projects' className='linkHome'>
           <LinkHome color='var(--cyan)' content='Proyectos'/>
         </Link>
-        <Link href='/' className='linkHome'>
+        <Link href='/contact' className='linkHome'>
           <LinkHome color='var(--green)' content='Contacto'/>
         </Link>
       </div>
