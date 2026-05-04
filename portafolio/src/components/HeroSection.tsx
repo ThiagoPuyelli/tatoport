@@ -1,4 +1,5 @@
 import profilePlaceholder from '../assets/Thiago_foto_perfil.jpeg'
+import cvPdf from '../assets/Thiago_Puyelli_CV.pdf'
 import { heroFacts, heroHighlights } from '../data/portfolioData'
 
 export function HeroSection() {
@@ -19,6 +20,9 @@ export function HeroSection() {
           </a>
           <a className="btn-secondary" href="#contacto">
             Contacto
+          </a>
+          <a className="btn-secondary" href={cvPdf} download="Thiago_Puyelli_CV.pdf">
+            Descargar CV
           </a>
         </div>
 
