@@ -1,25 +1,24 @@
-import profilePlaceholder from '../assets/profile-placeholder.svg'
+import profilePlaceholder from '../assets/Thiago_foto_perfil.jpeg'
 import { heroFacts, heroHighlights } from '../data/portfolioData'
 
 export function HeroSection() {
   return (
     <section id="inicio" className="content-width hero-section">
       <div className="hero-copy">
-        <p className="hero-kicker">Portafolio profesional</p>
+        <p className="hero-kicker">Portafolio</p>
         <h1>
-          Diseno soluciones web <span>con impacto real</span>
+          Analista Programador Universitario <span>Backend/Infra</span>
         </h1>
         <p className="hero-description">
-          Frontend y full stack con foco en performance, experiencia de usuario y
-          calidad de codigo. Esta es una base editable para tu portafolio final.
+          Experiencia como fullstack, con conocimientos respecto a infraestructura y el mundo distribuido. Empecé en el mundo de la programación a la corta edad de los 16 años, desde ese momento nunca deje de progresar como desarrollador y analista.
         </p>
 
         <div className="hero-actions">
           <a className="btn-primary" href="#proyectos">
             Ver proyectos
           </a>
-          <a className="btn-secondary" href="#sobre-mi">
-            Sobre mi
+          <a className="btn-secondary" href="#contacto">
+            Contacto
           </a>
         </div>
 
@@ -39,8 +38,10 @@ export function HeroSection() {
         </div>
 
         <div className="profile-content">
-          <h2>Tu Nombre Apellido</h2>
-          <p>Desarrollador Frontend / Full Stack</p>
+          <div className="profile-title">
+            <h2>Thiago Puyelli</h2>
+            <p>Analista Programador Universitario</p>
+          </div>
           <ul>
             {heroFacts.map((fact) => (
               <li key={fact}>{fact}</li>

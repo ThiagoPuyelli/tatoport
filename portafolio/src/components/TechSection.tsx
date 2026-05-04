@@ -5,9 +5,9 @@ export function TechSection() {
   return (
     <section id="tecnologias" className="content-width section-block">
       <SectionHeader
-        eyebrow="Tecnologias"
-        title="Stack principal"
-        description="Herramientas y tecnologias que utilizo para construir productos web robustos y mantenibles."
+        eyebrow="Conocimientos"
+        title="Tecnologías y conceptos"
+        description="Herramientas, conceptos y tecnologías que utilicé para mi trabajo, y mis trabajos prácticos"
       />
 
       <div className="tech-grid">

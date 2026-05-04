@@ -36,9 +36,9 @@ body {
   min-height: 100vh;
   color: var(--text-primary);
   background:
-    radial-gradient(circle at 0% 0%, rgba(16, 112, 224, 0.25), transparent 35%),
-    radial-gradient(circle at 100% 0%, rgba(8, 90, 202, 0.2), transparent 30%),
-    linear-gradient(180deg, #020a27 0%, #01071d 45%, #01051a 100%);
+    radial-gradient(circle at 0% 0%, rgba(14, 92, 180, 0.16), transparent 35%),
+    radial-gradient(circle at 100% 0%, rgba(8, 72, 168, 0.14), transparent 30%),
+    linear-gradient(180deg, #01051a 0%, #000614 48%, #00030e 100%);
 }
 
 #root {

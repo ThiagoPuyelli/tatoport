@@ -1,3 +1,10 @@
+import zkuads_gif from '../assets/ezgif-6343d35cfe9dbd2d.gif'
+import screen_blockchain from '../assets/screen-blockchain.png'
+import screen_mipla from '../assets/screen-mipla.png'
+import github from '../assets/github.png'
+import gmail from '../assets/gmail.png'
+import linkedin from '../assets/linkedin.png'
+
 export type NavItem = {
   label: string
   href: string
@@ -24,6 +31,10 @@ export type ProjectItem = {
   summary: string
   stack: string[]
   previewLabel: string
+  gif: string
+  link?: string
+  repo?: string
+  video?: string
 }
 
 export type TechnologyGroup = {
@@ -31,9 +42,10 @@ export type TechnologyGroup = {
   items: string[]
 }
 
-export type ValueItem = {
-  title: string
-  text: string
+export type ContactLink = {
+  label: string
+  href: string
+  icon: string
 }
 
 export const navItems: NavItem[] = [
@@ -42,123 +54,143 @@ export const navItems: NavItem[] = [
   { label: 'Educacion', href: '#educacion' },
   { label: 'Proyectos', href: '#proyectos' },
   { label: 'Tecnologias', href: '#tecnologias' },
-  { label: 'Sobre mi', href: '#sobre-mi' },
+  { label: 'Contacto', href: '#contacto' },
 ]
 
 export const heroHighlights = [
-  { value: '+12', label: 'proyectos entregados' },
-  { value: '+3', label: 'anos de experiencia' },
-  { value: '100%', label: 'enfoque en calidad' },
+  { value: '+4', label: 'años de experiencia' },
+  { value: '+6', label: 'años desde que empecé a programar' },
 ]
 
 export const heroFacts = [
-  'Disponible para proyectos freelance',
-  'Stack moderno con React y TypeScript',
-  'Colaboracion remota para LATAM y Europa',
+  'Disponible para proyectos freelance y empleos',
+  'Interés en el mundo distribuido',
 ]
 
 export const experienceData: ExperienceItem[] = [
   {
-    role: 'Frontend Developer',
-    company: 'Nombre de Empresa',
-    period: '2024 - Actualidad',
+    role: 'Desarrollador Fullstack',
+    company: 'POW',
+    period: 'Sept 2025 - Abril 2026',
+    mode: 'Remoto Full-Time',
+    summary:
+      'Cuando me movieron a este puesto, adquirí mayor experiencia en el mundo del backend de lo que ya tenia, aplicando patrones de diseño, arquitectura de software, manejo de AWS, uso de Python con FastAPI conectado a PostgreSQL, teniendo una mayor responsabilidad de la que tenía y teniendo una carga mayor en el trabajo afrontando problemas de requerimientos complejos, tratando de sostener el equilibrio entre productividad, buena calidad de arquitectura y código limpio.',
+  },
+  {
+    role: 'Desarrollador de Engines',
+    company: 'POW',
+    period: 'Enero 2022 - Abril 2026',
     mode: 'Remoto',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et massa eu odio interdum dapibus congue quis nibh.',
+      'Trabajé desarrollando la lógica de los diferentes juegos que ofrece POW, aplicando conceptos de POO, principios SOLID, patrones de diseño, estructuras de datos y algoritmia con el fin de lograr la menor complejidad algorítmica posible.',
   },
   {
-    role: 'Desarrollador Web',
-    company: 'Studio Digital',
-    period: '2022 - 2024',
-    mode: 'Hibrido',
+    role: 'Desarollador Frontend',
+    company: 'Bacord',
+    period: 'Enero 2022 - Febrero 2023',
+    mode: 'Remoto',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat, dui id ultricies pellentesque, metus metus porttitor magna.',
+      'En este puesto estuve desarrollando sitios web para la organización, realizando webs con React, Next.js y typescript',
   },
   {
-    role: 'Programador Junior',
-    company: 'Agencia Creativa',
-    period: '2021 - 2022',
-    mode: 'Presencial',
+    role: 'Desarollador Backend',
+    company: 'Eduli',
+    period: 'Mayo 2021 - Junio 2021',
+    mode: 'Remoto',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate vehicula lorem, non iaculis magna consequat ac.',
+      'En este proyecto estuve haciendo una tienda online de venta de autos, el cual tenia 17 años y aprendí una cantidad de cosas tremendas, ya que en ese momento simplemente venia de cursos y ahí pude fortalecer mucho de los conocimientos que hoy en día manejo, utilizando Node.js con Express, MongoDB y Typescript.',
   },
 ]
 
 export const educationData: EducationItem[] = [
   {
-    title: 'Tecnicatura en Desarrollo de Software',
-    institution: 'Instituto Superior - Placeholder',
-    period: '2021 - 2024',
+    title: 'Analista Programador Universitario',
+    institution: 'Universidad Nacional de Luján',
+    period: 'Marzo 2022 - Febrero 2026',
     details:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis justo gravida, interdum sem vitae, blandit nisl.',
+      'Título intermedio de la carrera que estuve estudiando el cual me enseño los conocimientos base relacionado a bases de datos, estructuras de datos, redes, sistemas distribuidos, POO, seguridad y demás.',
   },
   {
-    title: 'Curso Avanzado de React y TypeScript',
-    institution: 'Plataforma Online - Placeholder',
-    period: '2023',
+    title: 'Licenciatura en sistemas de información',
+    institution: 'Universidad Nacional de Luján',
+    period: 'Marzo 2022 - actualidad',
     details:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac risus convallis, tincidunt arcu ac, aliquam augue.',
+      'Sigo estudiando para ser licenciado, el cual estoy aprendiendo mucho sobre análisis de datos, IA, seguridad y estoy planteando mi idea de tesis el cual va a tratar sobre WebAssembly.',
   },
 ]
 
 export const projectsData: ProjectItem[] = [
   {
-    title: 'Dashboard Financiero',
+    title: 'Aplicación Zkuads',
     category: 'Web App',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere sem vel eros aliquam, at viverra justo dictum.',
-    stack: ['React', 'TypeScript', 'Chart.js', 'Node.js'],
+      'Proyecto el cual estuve trabajando durante años aportando código en los engines de los juegos en Typescript y luego en lo que respecta al backend de la plataforma en Python, haciendo un gran manejo en requerimientos complejos y código de calidad.',
+    stack: ['Python', 'TypeScript', 'WebSockets', 'FastAPI', 'AWS', 'Docker', 'Terraform', 'Jenkins', 'MongoDB', 'PostgreSQL'],
     previewLabel: 'Case 01',
+    gif: zkuads_gif,
+    video: 'https://www.youtube.com/watch?v=5YHtFPym7z4',
+    link: 'https://qa-frontend.zkuads.com/'
   },
   {
-    title: 'Landing para SaaS',
-    category: 'Marketing',
+    title: 'Blockchain',
+    category: 'Proyecto universitario - Cloud',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed erat lacinia, varius erat vitae, fermentum magna.',
-    stack: ['Vite', 'React', 'Framer Motion', 'CSS'],
+      'Trabajo práctico final de Sistemas Distribuidos y Programación Paralela, donde tuve que desarrollar con un compañero toda una infraestructura en Google GCP haciendo uso de diversas tecnologías para hacer funcionar una blockchain, aplicando muchos conceptos del mundo distribuido. Sumado a la funcionalidad, implementamos diversas tecnologías de métricas para poder visualizar mediante dashboard el estado de la blockchain.',
+    stack: ['Kubernetes', 'Docker', 'Terraform', 'Google GCP', 'Redis', 'RabbitMQ', 'Python', 'FastAPI', 'Grafana', 'Loki', 'Prometheus', 'Vault', 'Nginx', 'Linkerd', 'ArgoCD', 'CI/CD', 'Microservicios', 'Github Actions'],
     previewLabel: 'Case 02',
+    gif: screen_blockchain,
+    repo: 'https://github.com/ThiagoPuyelli/SDyPP-2025-Grupo4'
   },
   {
-    title: 'Sistema de Turnos',
-    category: 'Full Stack',
+    title: 'MiPla',
+    category: 'Proyecto universitario - Web App',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor neque id tortor aliquet, vitae feugiat augue consequat.',
-    stack: ['React', 'Express', 'PostgreSQL', 'JWT'],
+      'Trabajo práctico de la materia Seminario de Integración Profesional, donde aplicamo un desarrollo full stack e infraestructura en la nube, donde la aplicación permite gestionar clases particulares con una agenda, con el fin de automatizar el manejo de horarios de tanto los profesores como los alumnos, como también tiene su gestión de eventos, donde se pueden organizar charlas en conjunto.',
+    stack: ['React', 'Auth0', 'PostgreSQL', 'Python', 'FastAPI', 'Kubernetes', 'Google GCP', 'Terraform', 'CI/CD', 'ArgoCD', 'Github Actions'],
     previewLabel: 'Case 03',
+    gif: screen_mipla,
+    repo: 'https://github.com/Juanbrero/MyPla'
   },
 ]
 
 export const technologyGroups: TechnologyGroup[] = [
   {
     category: 'Frontend',
-    items: ['React', 'TypeScript', 'Vite', 'Next.js', 'Redux', 'Sass'],
+    items: ['React', 'TypeScript', 'CSS', 'Next.js', 'HTML', 'Javascript'],
   },
   {
     category: 'Backend',
-    items: ['Node.js', 'Express', 'NestJS', 'PostgreSQL', 'MongoDB', 'REST'],
+    items: ['Python', 'FastAPI', 'Node.js', 'Express', 'WebSockets', 'PostgreSQL', 'MongoDB', 'REST', 'POO', 'ORM', 'PL/SQL'],
   },
   {
-    category: 'Herramientas',
-    items: ['Git', 'Docker', 'Figma', 'Postman', 'Jest', 'CI/CD'],
+    category: 'DevOps',
+    items: ['Kubernetes', 'Docker', 'Terraform', 'ArgoCD', 'Grafana', 'CI/CD', 'Loki', 'Prometheus', 'RabbitMQ', 'Jenkins', 'Github Actions'],
   },
+  {
+    category: 'Bases de datos',
+    items: ['PostgreSQL', 'Firebird', 'Redis', 'SQL', 'PL/SQL', 'ORM', 'DER'],
+  },
+  {
+    category: 'Análisis de datos',
+    items: ['ETL', 'Colab', 'Scipy', 'Matplotlib', 'Python', 'Data Warehouse', 'Clustering'],
+  },
+
 ]
 
-export const aboutParagraphs = [
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate lectus in nunc facilisis, in elementum metus faucibus. Sed vitae lorem non lectus gravida varius.',
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse vulputate justo non massa iaculis, at viverra purus feugiat.',
-]
-
-export const valueItems: ValueItem[] = [
+export const contactLinks: ContactLink[] = [
   {
-    title: 'Pensamiento de producto',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis pretium nibh.',
+    label: 'GitHub',
+    href: 'https://github.com/ThiagoPuyelli',
+    icon: github,
   },
   {
-    title: 'Comunicacion clara',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum justo sed auctor faucibus.',
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/thiago-puyelli/',
+    icon: linkedin,
   },
   {
-    title: 'Iteracion constante',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tortor et odio faucibus hendrerit.',
+    label: 'Email',
+    href: 'mailto:thiagopuyelli@gmail.com',
+    icon: gmail,
   },
 ]

@@ -1,30 +1,26 @@
-import { aboutParagraphs, valueItems } from '../data/portfolioData'
+import { contactLinks } from '../data/portfolioData'
 import { SectionHeader } from './SectionHeader'
 
 export function AboutSection() {
   return (
-    <section id="sobre-mi" className="content-width section-block about-section">
-      <SectionHeader
-        eyebrow="Sobre mi"
-        title="Perfil profesional"
-        description="Una breve introduccion personal y forma de trabajo para colaborar en proyectos de calidad."
-      />
+    <section id="contacto" className="content-width section-block contact-section">
+      <SectionHeader eyebrow="Contacto" title="Links" />
 
-      <div className="about-layout">
-        <div className="about-copy">
-          {aboutParagraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </div>
-
-        <div className="values-grid">
-          {valueItems.map((item) => (
-            <article key={item.title} className="value-card">
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
+      <div className="contact-layout">
+        {contactLinks.map((item) => (
+          <a
+            key={item.label}
+            className="contact-link-card"
+            href={item.href}
+            aria-label={item.label}
+            title={item.label}
+            data-label={item.label}
+            target={item.href.startsWith('http') ? '_blank' : undefined}
+            rel={item.href.startsWith('http') ? 'noreferrer' : undefined}
+          >
+            <img className="contact-link-icon" src={item.icon} alt="" />
+          </a>
+        ))}
       </div>
     </section>
   )
