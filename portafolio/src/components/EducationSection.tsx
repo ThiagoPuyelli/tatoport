@@ -18,7 +18,7 @@ export function EducationSection() {
             </div>
             <h3>{item.title}</h3>
             <p className="card-subtitle">{item.institution}</p>
-            <p className="card-text">{item.details}</p>
+            <p className="card-text text-justify">{item.details}</p>
           </article>
         ))}
       </div>

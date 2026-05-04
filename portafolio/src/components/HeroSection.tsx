@@ -25,7 +25,7 @@ export function HeroSection() {
         <div className="highlights-grid">
           {heroHighlights.map((highlight) => (
             <div key={highlight.label} className="highlight-card">
-              <p>{highlight.value}</p>
+              <p className='text-justify'>{highlight.value}</p>
               <span>{highlight.label}</span>
             </div>
           ))}

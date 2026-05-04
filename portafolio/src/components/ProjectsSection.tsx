@@ -19,7 +19,7 @@ export function ProjectsSection() {
 
             <p className="project-category">{project.category}</p>
             <h3>{project.title}</h3>
-            <p className="card-text">{project.summary}</p>
+            <p className="card-text text-justify">{project.summary}</p>
 
             <ul className="chip-list">
               {project.stack.map((tech) => (

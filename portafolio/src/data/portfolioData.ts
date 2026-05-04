@@ -82,7 +82,7 @@ export const experienceData: ExperienceItem[] = [
     period: 'Enero 2022 - Abril 2026',
     mode: 'Remoto',
     summary:
-      'Trabajé desarrollando la lógica de los diferentes juegos que ofrece POW, aplicando conceptos de POO, principios SOLID, patrones de diseño, estructuras de datos y algoritmia con el fin de lograr la menor complejidad algorítmica posible.',
+      'Trabajé desarrollando la lógica de los diferentes juegos que ofrece POW, aplicando conceptos de POO, principios SOLID, patrones de diseño, estructuras de datos y algoritmia con el fin de lograr la menor complejidad algorítmica posible. Además tuve que desarrollar tests fuertes con el fin de generar diferentes estados de los juegos y testear diferentes casos puntuales.',
   },
   {
     role: 'Desarollador Frontend',
@@ -90,7 +90,7 @@ export const experienceData: ExperienceItem[] = [
     period: 'Enero 2022 - Febrero 2023',
     mode: 'Remoto',
     summary:
-      'En este puesto estuve desarrollando sitios web para la organización, realizando webs con React, Next.js y typescript',
+      'Durante este puesto me desempeñé como desarrollador frontend, participando activamente en el diseño e implementación de aplicaciones web para la organización. Trabajé principalmente con React, Next.js y TypeScript, desarrollando interfaces modernas, escalables y orientadas a una buena experiencia de usuario.',
   },
   {
     role: 'Desarollador Backend',
@@ -98,7 +98,7 @@ export const experienceData: ExperienceItem[] = [
     period: 'Mayo 2021 - Junio 2021',
     mode: 'Remoto',
     summary:
-      'En este proyecto estuve haciendo una tienda online de venta de autos, el cual tenia 17 años y aprendí una cantidad de cosas tremendas, ya que en ese momento simplemente venia de cursos y ahí pude fortalecer mucho de los conocimientos que hoy en día manejo, utilizando Node.js con Express, MongoDB y Typescript.',
+      'En este proyecto estuve haciendo una tienda online de venta de autos. Cuando entre a este proyecto tenía la corta edad de 17 años, es por esto que aprendi muchos conceptos que me hicieron crecer mucho como desarrollador, ya que en ese momento simplemente venia de cursos y ahí pude fortalecer mucho de los conocimientos que hoy en día manejo, utilizando Node.js con Express, MongoDB y Typescript.',
   },
 ]
 
@@ -124,7 +124,7 @@ export const projectsData: ProjectItem[] = [
     title: 'Aplicación Zkuads',
     category: 'Web App',
     summary:
-      'Proyecto el cual estuve trabajando durante años aportando código en los engines de los juegos en Typescript y luego en lo que respecta al backend de la plataforma en Python, haciendo un gran manejo en requerimientos complejos y código de calidad.',
+      'Proyecto el cual estuve trabajando durante 4 años aportando código en los engines de los juegos en Typescript y luego en lo que respecta al backend de la plataforma en Python, haciendo un gran manejo en requerimientos complejos y código de calidad. Se trata de juegos de apuestas donde el premio no se obtiene por suerte sino por habilidad, puediendo juegar diferentes modos apostando.',
     stack: ['Python', 'TypeScript', 'WebSockets', 'FastAPI', 'AWS', 'Docker', 'Terraform', 'Jenkins', 'MongoDB', 'PostgreSQL'],
     previewLabel: 'Case 01',
     gif: zkuads_gif,

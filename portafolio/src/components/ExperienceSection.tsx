@@ -19,7 +19,7 @@ export function ExperienceSection() {
             </div>
             <h3>{item.role}</h3>
             <p className="card-subtitle">{item.company}</p>
-            <p className="card-text">{item.summary}</p>
+            <p className="card-text text-justify">{item.summary}</p>
           </article>
         ))}
       </div>

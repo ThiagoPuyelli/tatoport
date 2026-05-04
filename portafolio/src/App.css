@@ -1,3 +1,7 @@
+.text-justify {
+  text-align: justify;
+}
+
 .portfolio-app {
   position: relative;
   min-height: 100vh;
