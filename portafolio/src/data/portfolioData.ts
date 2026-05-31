@@ -59,30 +59,29 @@ export const navItems: NavItem[] = [
 
 export const heroHighlights = [
   { value: '+4', label: 'años de experiencia' },
-  { value: '+6', label: 'años desde que empecé a programar' },
 ]
 
 export const heroFacts = [
   'Disponible para proyectos freelance y empleos',
-  'Interés en el mundo distribuido',
+  'Experiencia en sistemas distribuidos y tiempo real',
 ]
 
 export const experienceData: ExperienceItem[] = [
   {
-    role: 'Desarrollador Fullstack',
+    role: 'Desarrollador Backend / Fullstack',
     company: 'POW',
     period: 'Sept 2025 - Abril 2026',
     mode: 'Remoto Full-Time',
     summary:
-      'Cuando me movieron a este puesto, adquirí mayor experiencia en el mundo del backend de lo que ya tenia, aplicando patrones de diseño, arquitectura de software, manejo de AWS, uso de Python con FastAPI conectado a PostgreSQL, teniendo una mayor responsabilidad de la que tenía y teniendo una carga mayor en el trabajo afrontando problemas de requerimientos complejos, tratando de sostener el equilibrio entre productividad, buena calidad de arquitectura y código limpio.',
+      'Participé en el desarrollo de soluciones backend utilizando Python, FastAPI y PostgreSQL para funcionalidades orientadas al sector fintech. Implementé APIs REST utilizadas por múltiples módulos de negocio, integraciones con Amazon S3 mediante Boto3 y arquitecturas basadas en capas y patrones de diseño para mejorar mantenibilidad y reutilización del código. También colaboré en herramientas administrativas desarrolladas con React y Next.js.',
   },
   {
-    role: 'Desarrollador de Engines',
+    role: 'Desarrollador Backend / Engine',
     company: 'POW',
     period: 'Enero 2022 - Abril 2026',
     mode: 'Remoto',
     summary:
-      'Trabajé desarrollando la lógica de los diferentes juegos que ofrece POW, aplicando conceptos de POO, principios SOLID, patrones de diseño, estructuras de datos y algoritmia con el fin de lograr la menor complejidad algorítmica posible. Además tuve que desarrollar tests fuertes con el fin de generar diferentes estados de los juegos y testear diferentes casos puntuales.',
+      'Desarrollo de motores de juego y servicios backend para plataformas multijugador en tiempo real utilizando TypeScript, WebSockets y MongoDB. Implementé reglas de negocio, sincronización de estado entre múltiples clientes conectados y optimización del procesamiento de eventos para soportar escenarios concurrentes. Participé además en tareas de refactorización, mejora de arquitectura e implementación de tests.',
   },
   {
     role: 'Desarollador Frontend',
@@ -90,7 +89,7 @@ export const experienceData: ExperienceItem[] = [
     period: 'Enero 2022 - Febrero 2023',
     mode: 'Remoto',
     summary:
-      'Durante este puesto me desempeñé como desarrollador frontend, participando activamente en el diseño e implementación de aplicaciones web para la organización. Trabajé principalmente con React, Next.js y TypeScript, desarrollando interfaces modernas, escalables y orientadas a una buena experiencia de usuario.',
+      'Desarrollo de aplicaciones web utilizando React, Next.js y TypeScript. Implementación de interfaces responsivas, componentes reutilizables y mejoras orientadas a experiencia de usuario y rendimiento frontend, colaborando en distintos proyectos de la organización.',
   },
   {
     role: 'Desarollador Backend',
@@ -98,7 +97,7 @@ export const experienceData: ExperienceItem[] = [
     period: 'Mayo 2021 - Junio 2021',
     mode: 'Remoto',
     summary:
-      'En este proyecto estuve haciendo una tienda online de venta de autos. Cuando entre a este proyecto tenía la corta edad de 17 años, es por esto que aprendi muchos conceptos que me hicieron crecer mucho como desarrollador, ya que en ese momento simplemente venia de cursos y ahí pude fortalecer mucho de los conocimientos que hoy en día manejo, utilizando Node.js con Express, MongoDB y Typescript.',
+      'Participación en el desarrollo backend de una plataforma e-commerce orientada a la venta de vehículos. Implementación de funcionalidades CRUD, persistencia de datos e integración entre frontend y backend utilizando Node.js, Express y MongoDB.',
   },
 ]
 
@@ -107,24 +106,30 @@ export const educationData: EducationItem[] = [
     title: 'Analista Programador Universitario',
     institution: 'Universidad Nacional de Luján',
     period: 'Marzo 2022 - Febrero 2026',
-    details:
-      'Título intermedio de la carrera que estuve estudiando el cual me enseño los conocimientos base relacionado a bases de datos, estructuras de datos, redes, sistemas distribuidos, POO, seguridad y demás.',
+    details: 'Plan 17.13'
   },
   {
     title: 'Licenciatura en sistemas de información',
     institution: 'Universidad Nacional de Luján',
     period: 'Marzo 2022 - actualidad',
-    details:
-      'Sigo estudiando para ser licenciado, el cual estoy aprendiendo mucho sobre análisis de datos, IA, seguridad y estoy planteando mi idea de tesis el cual va a tratar sobre WebAssembly.',
+    details: 'Plan 17.13'
   },
 ]
 
 export const projectsData: ProjectItem[] = [
   {
+    title: 'Blockchain',
+    category: 'Proyecto universitario - Cloud',
+    summary: 'Diseño e implementación de una blockchain distribuida basada en microservicios desplegada sobre Kubernetes. El proyecto incluyó nodos de minería CPU/GPU, comunicación distribuida mediante RabbitMQ y Redis, observabilidad con Grafana, Loki y Prometheus, gestión de secretos con HashiCorp Vault y despliegue automatizado mediante Terraform sobre Google Cloud Platform.',
+    stack: ['Kubernetes', 'Docker', 'Terraform', 'Google GCP', 'Redis', 'RabbitMQ', 'Python', 'FastAPI', 'Grafana', 'Loki', 'Prometheus', 'Vault', 'Nginx', 'Linkerd', 'ArgoCD', 'CI/CD', 'Microservicios', 'Github Actions'],
+    previewLabel: 'Case 02',
+    gif: screen_blockchain,
+    repo: 'https://github.com/ThiagoPuyelli/SDyPP-2025-Grupo4'
+  },
+  {
     title: 'Aplicación Zkuads',
     category: 'Web App',
-    summary:
-      'Proyecto el cual estuve trabajando durante 4 años aportando código en los engines de los juegos en Typescript y luego en lo que respecta al backend de la plataforma en Python, haciendo un gran manejo en requerimientos complejos y código de calidad. Se trata de juegos de apuestas donde el premio no se obtiene por suerte sino por habilidad, puediendo juegar diferentes modos apostando.',
+    summary: 'Participación en el desarrollo backend de plataformas multijugador en tiempo real utilizando Python, FastAPI, TypeScript y WebSockets. Implementación de lógica de juego, sincronización de estado entre clientes, APIs backend y mejoras orientadas a escalabilidad y mantenibilidad del sistema.', 
     stack: ['Python', 'TypeScript', 'WebSockets', 'FastAPI', 'AWS', 'Docker', 'Terraform', 'Jenkins', 'MongoDB', 'PostgreSQL'],
     previewLabel: 'Case 01',
     gif: zkuads_gif,
@@ -132,20 +137,9 @@ export const projectsData: ProjectItem[] = [
     link: 'https://qa-frontend.zkuads.com/'
   },
   {
-    title: 'Blockchain',
-    category: 'Proyecto universitario - Cloud',
-    summary:
-      'Trabajo práctico final de Sistemas Distribuidos y Programación Paralela, donde tuve que desarrollar con un compañero toda una infraestructura en Google GCP haciendo uso de diversas tecnologías para hacer funcionar una blockchain, aplicando muchos conceptos del mundo distribuido. Sumado a la funcionalidad, implementamos diversas tecnologías de métricas para poder visualizar mediante dashboard el estado de la blockchain.',
-    stack: ['Kubernetes', 'Docker', 'Terraform', 'Google GCP', 'Redis', 'RabbitMQ', 'Python', 'FastAPI', 'Grafana', 'Loki', 'Prometheus', 'Vault', 'Nginx', 'Linkerd', 'ArgoCD', 'CI/CD', 'Microservicios', 'Github Actions'],
-    previewLabel: 'Case 02',
-    gif: screen_blockchain,
-    repo: 'https://github.com/ThiagoPuyelli/SDyPP-2025-Grupo4'
-  },
-  {
     title: 'MiPla',
     category: 'Proyecto universitario - Web App',
-    summary:
-      'Trabajo práctico de la materia Seminario de Integración Profesional, donde aplicamo un desarrollo full stack e infraestructura en la nube, donde la aplicación permite gestionar clases particulares con una agenda, con el fin de automatizar el manejo de horarios de tanto los profesores como los alumnos, como también tiene su gestión de eventos, donde se pueden organizar charlas en conjunto.',
+    summary: 'Desarrollo de una plataforma de gestión académica desplegada sobre infraestructura cloud. La aplicación permite administrar horarios, eventos y recursos institucionales mediante una arquitectura basada en React, FastAPI y PostgreSQL, incorporando prácticas de CI/CD y despliegue automatizado.',
     stack: ['React', 'Auth0', 'PostgreSQL', 'Python', 'FastAPI', 'Kubernetes', 'Google GCP', 'Terraform', 'CI/CD', 'ArgoCD', 'Github Actions'],
     previewLabel: 'Case 03',
     gif: screen_mipla,
@@ -155,26 +149,21 @@ export const projectsData: ProjectItem[] = [
 
 export const technologyGroups: TechnologyGroup[] = [
   {
-    category: 'Frontend',
-    items: ['React', 'TypeScript', 'CSS', 'Next.js', 'HTML', 'Javascript'],
-  },
-  {
     category: 'Backend',
-    items: ['Python', 'FastAPI', 'Node.js', 'Express', 'WebSockets', 'PostgreSQL', 'MongoDB', 'REST', 'POO', 'ORM', 'PL/SQL'],
+    items: ['Python', 'FastAPI', 'Node.js', 'Express', 'WebSockets', 'RabbitMQ', 'REST', 'POO', 'ORM', 'Microservicios', 'SQLAlchemy', 'Alembic', 'JWT'],
   },
   {
     category: 'DevOps',
-    items: ['Kubernetes', 'Docker', 'Terraform', 'ArgoCD', 'Grafana', 'CI/CD', 'Loki', 'Prometheus', 'RabbitMQ', 'Jenkins', 'Github Actions'],
+    items: ['Kubernetes', 'Docker', 'Terraform', 'ArgoCD', 'Grafana', 'CI/CD', 'Loki', 'Prometheus', 'Vault', 'Jenkins', 'Github Actions', 'Linux'],
   },
   {
     category: 'Bases de datos',
-    items: ['PostgreSQL', 'Firebird', 'Redis', 'SQL', 'PL/SQL', 'ORM', 'DER'],
+    items: ['PostgreSQL', 'Firebird', 'Redis', 'SQL', 'PL/SQL', 'MongoDB'],
   },
   {
-    category: 'Análisis de datos',
-    items: ['ETL', 'Colab', 'Scipy', 'Matplotlib', 'Python', 'Data Warehouse', 'Clustering'],
+    category: 'Frontend',
+    items: ['React', 'TypeScript', 'CSS', 'Next.js', 'HTML', 'Javascript'],
   },
-
 ]
 
 export const contactLinks: ContactLink[] = [

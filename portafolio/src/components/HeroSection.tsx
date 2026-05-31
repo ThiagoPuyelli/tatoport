@@ -8,10 +8,10 @@ export function HeroSection() {
       <div className="hero-copy">
         <p className="hero-kicker">Portafolio</p>
         <h1>
-          Analista Programador Universitario <span>Backend/Infra</span>
+          Backend / Fullstack <span>Developer</span>
         </h1>
         <p className="hero-description">
-          Experiencia como fullstack, con conocimientos respecto a infraestructura y el mundo distribuido. Empecé en el mundo de la programación a la corta edad de los 16 años, desde ese momento nunca deje de progresar como desarrollador y analista.
+          Más de 4 años desarrollando sistemas backend, plataformas multijugador en tiempo real y arquitecturas distribuidas utilizando Python, FastAPI, TypeScript, WebSockets y tecnologías cloud.
         </p>
 
         <div className="hero-actions">
@@ -44,7 +44,7 @@ export function HeroSection() {
         <div className="profile-content">
           <div className="profile-title">
             <h2>Thiago Puyelli</h2>
-            <p>Analista Programador Universitario</p>
+            <p>Backend / Fullstack Developer</p>
           </div>
           <ul>
             {heroFacts.map((fact) => (
