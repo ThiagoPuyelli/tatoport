@@ -3,6 +3,7 @@ import screen_blockchain from '../assets/screen-blockchain.png'
 import screen_mipla from '../assets/screen-mipla.png'
 import github from '../assets/github.png'
 import gmail from '../assets/gmail.png'
+import agent from '../assets/agent.png'
 import linkedin from '../assets/linkedin.png'
 
 export type NavItem = {
@@ -118,20 +119,29 @@ export const educationData: EducationItem[] = [
 
 export const projectsData: ProjectItem[] = [
   {
-    title: 'Blockchain',
+    title: 'Blockchain distribuida sobre Kubernetes',
     category: 'Proyecto universitario - Cloud',
     summary: 'Diseño e implementación de una blockchain distribuida basada en microservicios desplegada sobre Kubernetes. El proyecto incluyó nodos de minería CPU/GPU, comunicación distribuida mediante RabbitMQ y Redis, observabilidad con Grafana, Loki y Prometheus, gestión de secretos con HashiCorp Vault y despliegue automatizado mediante Terraform sobre Google Cloud Platform.',
     stack: ['Kubernetes', 'Docker', 'Terraform', 'Google GCP', 'Redis', 'RabbitMQ', 'Python', 'FastAPI', 'Grafana', 'Loki', 'Prometheus', 'Vault', 'Nginx', 'Linkerd', 'ArgoCD', 'CI/CD', 'Microservicios', 'Github Actions'],
-    previewLabel: 'Case 02',
+    previewLabel: 'Case 01',
     gif: screen_blockchain,
     repo: 'https://github.com/ThiagoPuyelli/SDyPP-2025-Grupo4'
+  },
+  {
+    title: 'Agente conversacional para aula virtual con LangGraph',
+    category: 'Proyecto universitario - IA',
+    summary: 'Desarrollé un agente conversacional en Python utilizando LangGraph para responder preguntas sobre los contenidos disponibles en diferentes aulas virtuales. Diseñé e implementé herramientas de crawling para recorrer cursos y secciones, extraer contenido HTML y proporcionarlo dinámicamente al agente según la consulta realizada. Implementé el flujo de selección y ejecución de herramientas, administrando el contexto y la información recuperada para generar respuestas basadas en el contenido del aula virtual.',
+    stack: ['Python', 'LangGraph', 'Crawl', 'Web Scraping', 'Gemini', 'Ollama'],
+    previewLabel: 'Case 02',
+    gif: agent,
+    repo: 'https://github.com/MatiasHerrneder/agent-for-web-campus'
   },
   {
     title: 'Aplicación Zkuads',
     category: 'Web App',
     summary: 'Participación en el desarrollo backend de plataformas multijugador en tiempo real utilizando Python, FastAPI, TypeScript y WebSockets. Implementación de lógica de juego, sincronización de estado entre clientes, APIs backend y mejoras orientadas a escalabilidad y mantenibilidad del sistema.', 
     stack: ['Python', 'TypeScript', 'WebSockets', 'FastAPI', 'AWS', 'Docker', 'Terraform', 'Jenkins', 'MongoDB', 'PostgreSQL'],
-    previewLabel: 'Case 01',
+    previewLabel: 'Case 03',
     gif: zkuads_gif,
     video: 'https://www.youtube.com/watch?v=5YHtFPym7z4',
     link: 'https://qa-frontend.zkuads.com/'
@@ -141,7 +151,7 @@ export const projectsData: ProjectItem[] = [
     category: 'Proyecto universitario - Web App',
     summary: 'Desarrollo de una plataforma de gestión académica desplegada sobre infraestructura cloud. La aplicación permite administrar horarios, eventos y recursos institucionales mediante una arquitectura basada en React, FastAPI y PostgreSQL, incorporando prácticas de CI/CD y despliegue automatizado.',
     stack: ['React', 'Auth0', 'PostgreSQL', 'Python', 'FastAPI', 'Kubernetes', 'Google GCP', 'Terraform', 'CI/CD', 'ArgoCD', 'Github Actions'],
-    previewLabel: 'Case 03',
+    previewLabel: 'Case 04',
     gif: screen_mipla,
     repo: 'https://github.com/Juanbrero/MyPla'
   },
