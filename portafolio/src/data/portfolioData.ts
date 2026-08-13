@@ -1,6 +1,4 @@
-import zkuads_gif from '../assets/ezgif-6343d35cfe9dbd2d.gif'
 import screen_blockchain from '../assets/screen-blockchain.png'
-import screen_mipla from '../assets/screen-mipla.png'
 import github from '../assets/github.png'
 import gmail from '../assets/gmail.png'
 import agent from '../assets/agent.png'
@@ -52,9 +50,9 @@ export type ContactLink = {
 export const navItems: NavItem[] = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'Experiencia', href: '#experiencia' },
-  { label: 'Educacion', href: '#educacion' },
+  { label: 'Educación', href: '#educacion' },
   { label: 'Proyectos', href: '#proyectos' },
-  { label: 'Tecnologias', href: '#tecnologias' },
+  { label: 'Tecnologías', href: '#tecnologias' },
   { label: 'Contacto', href: '#contacto' },
 ]
 
@@ -63,57 +61,33 @@ export const heroHighlights = [
 ]
 
 export const heroFacts = [
-  'Disponible para proyectos freelance y empleos',
-  'Experiencia en sistemas distribuidos y tiempo real',
+  'Full Stack orientado a productos web, backend y cloud',
+  'Experiencia con TypeScript, Python, React, Next.js y FastAPI',
 ]
 
 export const experienceData: ExperienceItem[] = [
   {
-    role: 'Desarrollador Backend / Fullstack',
+    role: 'Backend / Full Stack Developer y Engine Developer',
     company: 'POW',
-    period: 'Sept 2025 - Abril 2026',
-    mode: 'Remoto Full-Time',
-    summary:
-      'Participé en el desarrollo de soluciones backend utilizando Python, FastAPI y PostgreSQL para funcionalidades orientadas al sector fintech. Implementé APIs REST utilizadas por múltiples módulos de negocio, integraciones con Amazon S3 mediante Boto3 y arquitecturas basadas en capas y patrones de diseño para mejorar mantenibilidad y reutilización del código. También colaboré en herramientas administrativas desarrolladas con React y Next.js.',
-  },
-  {
-    role: 'Desarrollador Backend / Engine',
-    company: 'POW',
-    period: 'Enero 2022 - Abril 2026',
+    period: '01/2022 - 04/2026',
     mode: 'Remoto',
     summary:
-      'Desarrollo de motores de juego y servicios backend para plataformas multijugador en tiempo real utilizando TypeScript, WebSockets y MongoDB. Implementé reglas de negocio, sincronización de estado entre múltiples clientes conectados y optimización del procesamiento de eventos para soportar escenarios concurrentes. Participé además en tareas de refactorización, mejora de arquitectura e implementación de tests.',
-  },
-  {
-    role: 'Desarollador Frontend',
-    company: 'Bacord',
-    period: 'Enero 2022 - Febrero 2023',
-    mode: 'Remoto',
-    summary:
-      'Desarrollo de aplicaciones web utilizando React, Next.js y TypeScript. Implementación de interfaces responsivas, componentes reutilizables y mejoras orientadas a experiencia de usuario y rendimiento frontend, colaborando en distintos proyectos de la organización.',
-  },
-  {
-    role: 'Desarollador Backend',
-    company: 'Eduli',
-    period: 'Mayo 2021 - Junio 2021',
-    mode: 'Remoto',
-    summary:
-      'Participación en el desarrollo backend de una plataforma e-commerce orientada a la venta de vehículos. Implementación de funcionalidades CRUD, persistencia de datos e integración entre frontend y backend utilizando Node.js, Express y MongoDB.',
+      'Desarrollé aplicaciones y servicios con TypeScript, Node.js, Python y FastAPI, participando en componentes backend y funcionalidades Full Stack. Diseñé APIs REST, lógica de negocio, autenticación e integraciones entre servicios, y trabajé con React para interfaces conectadas al backend. También colaboré en sistemas distribuidos y aplicaciones en tiempo real con WebSockets y MongoDB, integré AWS mediante Boto3 y Amazon S3, refactoricé componentes siguiendo SOLID y patrones de diseño, y optimicé procesos críticos orientados a eventos.',
   },
 ]
 
 export const educationData: EducationItem[] = [
   {
-    title: 'Analista Programador Universitario',
+    title: 'Licenciatura en Sistemas de Información',
     institution: 'Universidad Nacional de Luján',
-    period: 'Marzo 2022 - Febrero 2026',
-    details: 'Plan 17.13'
+    period: '2022 - Actualidad',
+    details: 'Formación en curso',
   },
   {
-    title: 'Licenciatura en sistemas de información',
+    title: 'Analista Programador Universitario',
     institution: 'Universidad Nacional de Luján',
-    period: 'Marzo 2022 - actualidad',
-    details: 'Plan 17.13'
+    period: '2022 - 2026',
+    details: 'Título intermedio obtenido en 2026',
   },
 ]
 
@@ -121,58 +95,57 @@ export const projectsData: ProjectItem[] = [
   {
     title: 'Blockchain distribuida sobre Kubernetes',
     category: 'Proyecto universitario - Cloud',
-    summary: 'Diseño e implementación de una blockchain distribuida basada en microservicios desplegada sobre Kubernetes. El proyecto incluyó nodos de minería CPU/GPU, comunicación distribuida mediante RabbitMQ y Redis, observabilidad con Grafana, Loki y Prometheus, gestión de secretos con HashiCorp Vault y despliegue automatizado mediante Terraform sobre Google Cloud Platform.',
-    stack: ['Kubernetes', 'Docker', 'Terraform', 'Google GCP', 'Redis', 'RabbitMQ', 'Python', 'FastAPI', 'Grafana', 'Loki', 'Prometheus', 'Vault', 'Nginx', 'Linkerd', 'ArgoCD', 'CI/CD', 'Microservicios', 'Github Actions'],
+    summary:
+      'Desarrollé una blockchain distribuida basada en microservicios con Python, Docker, Kubernetes y Terraform. El proyecto incorporó comunicación distribuida mediante RabbitMQ y Redis, observabilidad con Grafana, Loki y Prometheus, gestión de secretos con HashiCorp Vault y despliegue sobre Google Cloud Platform.',
+    stack: ['Python', 'Docker', 'Kubernetes', 'Terraform', 'RabbitMQ', 'Redis', 'Grafana', 'Loki', 'Prometheus', 'Vault', 'GCP', 'Microservicios'],
     previewLabel: 'Case 01',
     gif: screen_blockchain,
-    repo: 'https://github.com/ThiagoPuyelli/SDyPP-2025-Grupo4'
+    repo: 'https://github.com/ThiagoPuyelli/SDyPP-2025-Grupo4',
   },
   {
     title: 'Agente conversacional para aula virtual con LangGraph',
     category: 'Proyecto universitario - IA',
-    summary: 'Desarrollé un agente conversacional en Python utilizando LangGraph para responder preguntas sobre los contenidos disponibles en diferentes aulas virtuales. Diseñé e implementé herramientas de crawling para recorrer cursos y secciones, extraer contenido HTML y proporcionarlo dinámicamente al agente según la consulta realizada. Implementé el flujo de selección y ejecución de herramientas, administrando el contexto y la información recuperada para generar respuestas basadas en el contenido del aula virtual.',
-    stack: ['Python', 'LangGraph', 'Crawl', 'Web Scraping', 'Gemini', 'Ollama'],
+    summary:
+      'Desarrollé un agente conversacional en Python y LangGraph para responder consultas sobre contenidos de aulas virtuales. Implementé herramientas de crawling para recorrer cursos y secciones, extraer HTML y alimentar dinámicamente al agente con información recuperada según la consulta.',
+    stack: ['Python', 'LangGraph', 'Web Crawling', 'Web Scraping', 'Gemini', 'Ollama'],
     previewLabel: 'Case 02',
     gif: agent,
-    repo: 'https://github.com/MatiasHerrneder/agent-for-web-campus'
-  },
-  {
-    title: 'Aplicación Zkuads',
-    category: 'Web App',
-    summary: 'Participación en el desarrollo backend de plataformas multijugador en tiempo real utilizando Python, FastAPI, TypeScript y WebSockets. Implementación de lógica de juego, sincronización de estado entre clientes, APIs backend y mejoras orientadas a escalabilidad y mantenibilidad del sistema.', 
-    stack: ['Python', 'TypeScript', 'WebSockets', 'FastAPI', 'AWS', 'Docker', 'Terraform', 'Jenkins', 'MongoDB', 'PostgreSQL'],
-    previewLabel: 'Case 03',
-    gif: zkuads_gif,
-    video: 'https://www.youtube.com/watch?v=5YHtFPym7z4',
-    link: 'https://qa-frontend.zkuads.com/'
-  },
-  {
-    title: 'MiPla',
-    category: 'Proyecto universitario - Web App',
-    summary: 'Desarrollo de una plataforma de gestión académica desplegada sobre infraestructura cloud. La aplicación permite administrar horarios, eventos y recursos institucionales mediante una arquitectura basada en React, FastAPI y PostgreSQL, incorporando prácticas de CI/CD y despliegue automatizado.',
-    stack: ['React', 'Auth0', 'PostgreSQL', 'Python', 'FastAPI', 'Kubernetes', 'Google GCP', 'Terraform', 'CI/CD', 'ArgoCD', 'Github Actions'],
-    previewLabel: 'Case 04',
-    gif: screen_mipla,
-    repo: 'https://github.com/Juanbrero/MyPla'
+    repo: 'https://github.com/MatiasHerrneder/agent-for-web-campus',
   },
 ]
 
 export const technologyGroups: TechnologyGroup[] = [
   {
-    category: 'Backend',
-    items: ['Python', 'FastAPI', 'Node.js', 'Express', 'WebSockets', 'RabbitMQ', 'REST', 'POO', 'ORM', 'Microservicios', 'SQLAlchemy', 'Alembic', 'JWT'],
-  },
-  {
-    category: 'DevOps',
-    items: ['Kubernetes', 'Docker', 'Terraform', 'ArgoCD', 'Grafana', 'CI/CD', 'Loki', 'Prometheus', 'Vault', 'Jenkins', 'Github Actions', 'Linux'],
-  },
-  {
-    category: 'Bases de datos',
-    items: ['PostgreSQL', 'Firebird', 'Redis', 'SQL', 'PL/SQL', 'MongoDB'],
+    category: 'Lenguajes',
+    items: ['TypeScript', 'JavaScript', 'Python', 'SQL', 'C'],
   },
   {
     category: 'Frontend',
-    items: ['React', 'TypeScript', 'CSS', 'Next.js', 'HTML', 'Javascript'],
+    items: ['React', 'Next.js', 'HTML', 'CSS'],
+  },
+  {
+    category: 'Backend',
+    items: ['Node.js', 'Express', 'FastAPI', 'SQLAlchemy', 'Alembic', 'Pydantic', 'REST', 'WebSockets', 'JWT', 'Microservicios'],
+  },
+  {
+    category: 'Bases de datos y mensajería',
+    items: ['PostgreSQL', 'MongoDB', 'Redis', 'RabbitMQ'],
+  },
+  {
+    category: 'Cloud e infraestructura',
+    items: ['AWS', 'Amazon S3', 'Boto3', 'GCP', 'Docker', 'Kubernetes', 'Terraform', 'Linux', 'CI/CD', 'Vault'],
+  },
+  {
+    category: 'Arquitectura y desarrollo',
+    items: ['Arquitectura por capas', 'SOLID', 'Patrones de diseño', 'Sistemas distribuidos', 'Testing unitario', 'Git'],
+  },
+  {
+    category: 'IA y automatización',
+    items: ['LangGraph', 'Agentes con LLMs', 'Tool calling', 'Web scraping', 'Crawling', 'Claude Code', 'Codex'],
+  },
+  {
+    category: 'Observabilidad',
+    items: ['Grafana', 'Loki', 'Prometheus'],
   },
 ]
 

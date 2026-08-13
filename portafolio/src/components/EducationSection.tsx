@@ -5,9 +5,9 @@ export function EducationSection() {
   return (
     <section id="educacion" className="content-width section-block">
       <SectionHeader
-        eyebrow="Educacion"
-        title="Formacion academica"
-        description="Mi carrera académica frente a la Universidad"
+        eyebrow="Educación"
+        title="Formación académica"
+        description="Carrera universitaria y título intermedio alineados con mi perfil técnico."
       />
 
       <div className="cards-grid education-grid">

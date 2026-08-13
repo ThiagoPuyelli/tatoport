@@ -7,10 +7,10 @@ export function ExperienceSection() {
       <SectionHeader
         eyebrow="Experiencia"
         title="Trayectoria profesional"
-        description="Experiencias destacadas con enfoque en desarrollo web, colaboracion y entrega de producto."
+        description="Experiencia orientada a backend, integración de servicios, tiempo real y desarrollo Full Stack."
       />
 
-      <div className="cards-grid">
+      <div className="display-flex justify-content-center">
         {experienceData.map((item) => (
           <article key={`${item.company}-${item.period}`} className="timeline-card">
             <div className="timeline-top">

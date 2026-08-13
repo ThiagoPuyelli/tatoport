@@ -6,15 +6,15 @@ export function ProjectsSection() {
     <section id="proyectos" className="content-width section-block">
       <SectionHeader
         eyebrow="Proyectos"
-        title="Proyectos para mostrar"
-        description="Selección de proyectos para mostrar resolucion técnica, diseño de interfaz y foco en resultados."
+        title="Proyectos destacados"
+        description="Proyectos académicos y técnicos que reflejan mi trabajo en Full Stack, IA y cloud."
       />
 
       <div className="projects-grid">
         {projectsData.map((project) => (
           <article key={project.title} className="project-card">
             <div className="project-preview" aria-hidden="true">
-              <img className='project-gif' src={project.gif} alt="Imagen placeholder de perfil" />
+              <img className="project-gif" src={project.gif} alt={`Vista previa de ${project.title}`} />
             </div>
 
             <p className="project-category">{project.category}</p>

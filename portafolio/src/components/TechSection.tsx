@@ -7,7 +7,7 @@ export function TechSection() {
       <SectionHeader
         eyebrow="Conocimientos"
         title="Tecnologías y conceptos"
-        description="Herramientas, conceptos y tecnologías que utilicé para mi trabajo, y mis trabajos prácticos"
+        description="Herramientas, conceptos y tecnologías que uso en desarrollo Full Stack, cloud e IA."
       />
 
       <div className="tech-grid">

@@ -6,7 +6,7 @@ export function SiteFooter() {
           <span>Thiago Puyelli</span>
         </h2>
 
-        <p>Backend / Fullstack Developer</p>
+        <p>Full Stack Developer</p>
 
         <small>© 2026 Thiago Puyelli. Todos los derechos reservados.</small>
       </div>

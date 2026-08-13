@@ -8,10 +8,10 @@ export function HeroSection() {
       <div className="hero-copy">
         <p className="hero-kicker">Portafolio</p>
         <h1>
-          Backend / Fullstack <span>Developer</span>
+          Full Stack <span>Developer</span>
         </h1>
         <p className="hero-description">
-          Más de 4 años desarrollando sistemas backend, plataformas multijugador en tiempo real y arquitecturas distribuidas utilizando Python, FastAPI, TypeScript, WebSockets y tecnologías cloud.
+          Más de 4 años construyendo productos web, APIs y sistemas distribuidos con TypeScript, Python, React, Next.js, FastAPI y tecnologías cloud.
         </p>
 
         <div className="hero-actions">
@@ -38,13 +38,13 @@ export function HeroSection() {
 
       <aside className="hero-profile">
         <div className="profile-image-shell">
-          <img src={profilePlaceholder} alt="Imagen placeholder de perfil" />
+          <img src={profilePlaceholder} alt="Foto de perfil de Thiago Puyelli" />
         </div>
 
         <div className="profile-content">
           <div className="profile-title">
             <h2>Thiago Puyelli</h2>
-            <p>Backend / Fullstack Developer</p>
+            <p>Full Stack Developer</p>
           </div>
           <ul>
             {heroFacts.map((fact) => (

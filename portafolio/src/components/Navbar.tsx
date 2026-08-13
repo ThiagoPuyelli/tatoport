@@ -61,7 +61,7 @@ export function Navbar() {
         <button
           type="button"
           className="mobile-menu-button"
-          aria-label={isMenuOpen ? 'Cerrar menu' : 'Abrir menu'}
+          aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu-panel"
           onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -73,17 +73,17 @@ export function Navbar() {
       <button
         type="button"
         className={`mobile-menu-overlay ${isMenuOpen ? 'open' : ''}`}
-        aria-label="Cerrar menu lateral"
+        aria-label="Cerrar menú lateral"
         onClick={closeMenu}
       />
 
       <nav
         id="mobile-menu-panel"
         className={`mobile-menu-panel ${isMenuOpen ? 'open' : ''}`}
-        aria-label="Secciones principales en movil"
+        aria-label="Secciones principales en móvil"
       >
         <div className="mobile-menu-head">
-          <p>Menu</p>
+          <p>Menú</p>
           <button type="button" onClick={closeMenu}>
             Cerrar
           </button>

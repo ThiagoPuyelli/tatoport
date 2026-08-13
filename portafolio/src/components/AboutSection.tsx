@@ -4,7 +4,11 @@ import { SectionHeader } from './SectionHeader'
 export function AboutSection() {
   return (
     <section id="contacto" className="content-width section-block contact-section">
-      <SectionHeader eyebrow="Contacto" title="Links" />
+      <SectionHeader
+        eyebrow="Contacto"
+        title="Conectemos"
+        description="GitHub, LinkedIn y correo para seguir en contacto profesional."
+      />
 
       <div className="contact-layout">
         {contactLinks.map((item) => (
